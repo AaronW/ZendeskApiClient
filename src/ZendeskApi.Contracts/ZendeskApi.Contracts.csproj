@@ -58,6 +58,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Models\CustomField.cs" />
+    <Compile Include="Models\Request.cs" />
     <Compile Include="Models\TicketComment.cs" />
     <Compile Include="Models\TicketEventType.cs" />
     <Compile Include="Models\User.cs" />
@@ -75,6 +76,7 @@
     <Compile Include="Requests\IRequest.cs" />
     <Compile Include="Requests\OrganizationRequest.cs" />
     <Compile Include="Requests\OrganizationMembershipRequest.cs" />
+    <Compile Include="Requests\RequestRequest.cs" />
     <Compile Include="Requests\UserIdentityRequest.cs" />
     <Compile Include="Requests\UserRequest.cs" />
     <Compile Include="Responses\IListResponse.cs" />
@@ -82,6 +84,8 @@
     <Compile Include="Responses\IResponse.cs" />
     <Compile Include="Responses\OrganizationListResponse.cs" />
     <Compile Include="Responses\OrganizationMembershipResponse.cs" />
+    <Compile Include="Responses\RequestListResponse.cs" />
+    <Compile Include="Responses\RequestResponse.cs" />
     <Compile Include="Responses\TicketCommentListResponse.cs" />
     <Compile Include="Responses\OrganizationMembershipListResponse.cs" />
     <Compile Include="Responses\UserIdentityResponse.cs" />

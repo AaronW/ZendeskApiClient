@@ -9,6 +9,7 @@ namespace ZendeskApi.Client
 {
     public class ZendeskClient : ClientBase, IZendeskClient
     {
+        public IRequestResource Requests { get; private set; }
         public ITicketResource Tickets { get; private set; }
         public ITicketCommentResource TicketComments { get; private set; }
         public IOrganizationResource Organizations { get; private set; }
@@ -22,6 +23,7 @@ namespace ZendeskApi.Client
         public ZendeskClient(Uri baseUri, ZendeskDefaultConfiguration configuration, ISerializer serializer = null, IHttpChannel httpChannel = null, ILogAdapter logger = null)
             :base(baseUri, configuration, serializer, httpChannel, logger)
         {
+            Requests = new RequestResource(this);
             Tickets = new TicketResource(this);
             TicketComments = new TicketCommentResource(this);
             Organizations = new OrganizationResource(this);
